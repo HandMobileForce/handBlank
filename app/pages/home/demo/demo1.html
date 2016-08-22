@@ -1,0 +1,18 @@
+<ion-view view-title="demo1">
+  <ion-header-bar class="bar bar-header bar-positive">
+    <div class="button button-clear" ng-click="getBack()">
+      <i class=" icon ion-ios-arrow-back"></i>
+    </div>
+    <div class="title">demo1</div>
+  </ion-header-bar>
+
+  <!--首行首列固定的滚动表格 begin-->
+  <ion-content scroll="false">
+    <hand-api-table
+      param1="columnName"
+      param2="headData"
+      param3="bodyData">
+    </hand-api-table>
+  </ion-content>
+  <!--end-->
+</ion-view>
