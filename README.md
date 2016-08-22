@@ -15,10 +15,10 @@ learning course.
 
 ```bash
 # clone repo
-$ git clone https://github.com/HandMobileForce/Demo.git
+$ git clone https://github.com/HandMobileForce/handBlank.git
 
 # change directory to app root
-$ cd Demo
+$ cd handBlank
 
 # install the dependencies with npm
 $ npm install
