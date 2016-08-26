@@ -1,11 +1,20 @@
-# handBlank 模板
+# handTabs 模板
 
-一个基于 ionic v1 + angular v2 的 Hybrid app环境
+# 工程介绍
+```
+1、app目录下有config文件夹，里面有devConfig.json和prodConfig.json。对应开发环境和正式环境。
 
->建议: 推荐 Cordova 5.4.1以及以上 + gulp + bower
+2、publish文件夹同样存在dev和prod两种环境  
+   dev文件夹配置了开发环境的configXmlDev,和resourcesDev
+   prod文件夹配置了正式环境的configXmlProd,和resourcesProd
+
+3、app目录下scripts文件夹里面的comment存放着公共的方法，有service.js和publicFunction.js两个文件
+   引用service.js里面的方法记得注入publicMethod
+   
+4、在page下面新建.scss文件的时候    注意theme文件夹里面的app.core.scss的修改
+```
 
 # 环境搭建
-
 ```
 # 下载源代码
 $ git clone https://github.com/HandMobileForce/handBlank.git
@@ -83,8 +92,7 @@ Xcode
 3.javascript代码变量第二个单词首字母大写  比如 timeOffManagment
 4.javascript代码字符串定义用单引号  比如 var target=''
 5.angular的对象里面不要使用闭包
-6.angular的controller和service 用注入的时候，都要进行申明，目的是为了压缩混淆，
-  如 angular.modal.controller('TabCtrl’,[‘$scope’,function($scope){}]);
+6.angular的controller和service 用注入的时候，都要进行申明，目的是为了压缩混淆，如 angular.modal.controller('TabCtrl’,[‘$scope’,function($scope){}]);
 6.尽量谨慎使用$rootScope.$broadcast  因为$rootScope 不会在controller销毁的时候被回收
 7.scss的规范写法
    approve-list {
@@ -96,17 +104,6 @@ Xcode
 8.代码里面一定要有注释
 9.angularJS项目 逻辑功能不要全部写在controller里面，因该写在service里面
 10. 在一个controller 里面，变量都在最上面，函数在下面，因为js执行的时候，他也会自动先去执行变量的定义
-```
-
-#关于app下面的文件夹
-```
-1、app目录下有config 和configProd，configxml和configxmlProd文件，
-   resources目录下有dev和prod文件分别对应开发环境和正式环境。
-   需要自已配置对应的文件，resources没有开发和正式环境的区分可直接把cev和prod文件下的图片设置成一样的
-
-2、app目录下的scripts里面的comment存放着公共的方法，有service.js和publicFunction.js两个文件
-   引用service.js里面的方法记得注入publicMethod
-   
-3、在page下面新建.scss文件的时候    注意theme文件夹里面的app.core.scss的修改
+11. 在使用指令的时候用hms打头，dom，content写在template里面。
 ```
 

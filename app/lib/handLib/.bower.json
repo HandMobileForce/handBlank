@@ -1,0 +1,26 @@
+{
+  "name": "handLib",
+  "homepage": "https://github.com/HandMobileForce/handLib",
+  "authors": [
+    "qi.he <qi.he@hand-china.com>"
+  ],
+  "description": "hand指令库",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "_release": "db6d7460c0",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "db6d7460c0f8e554473ee931d23b1bc2b8232fa8"
+  },
+  "_source": "https://github.com/HandMobileForce/handLib.git",
+  "_target": "*",
+  "_originalSource": "handLib"
+}

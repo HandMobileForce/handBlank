@@ -18,7 +18,7 @@ var myApp = angular.module('myApp', [
   'utilModule',
   'homeModule',
   'demoModule',
-  'derectiveModule',
+  'hmsDerectives',
   'utilsModule',
   'serviceModule'
 ]);
