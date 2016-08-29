@@ -1,4 +1,4 @@
-# handTabs 模板
+# handBlank 模板
 
 # 模板介绍
 ```
